@@ -1,6 +1,6 @@
 export const homeRoute = (app) => {
   app.route('/')
     .get((req, res) => {
-      res.json('inicio')
+      res.render('home/home')
     })
 }
