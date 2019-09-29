@@ -15,7 +15,10 @@
     "body-parser": "^1.19.0",
     "core-js": "^3.2.1",
     "express": "^4.17.1",
-    "pug": "^2.0.4"
+    "mariadb": "^2.1.1",
+    "mysql2": "^1.7.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.19.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
