@@ -1,6 +1,8 @@
 import bodyParser from 'body-parser'
 import express from 'express'
 
+import { routes } from './routes'
+
 import path from 'path'
 
 const setup = () => {
@@ -13,6 +15,9 @@ const setup = () => {
   
   app.use('/static', express.static(path.join(__dirname, 'static')))
   app.use(express.static(path.join(__dirname, 'public')))
+
+
+  routes.map(route => route(app))
 
   return app
 }

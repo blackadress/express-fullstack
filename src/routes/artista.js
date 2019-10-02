@@ -1,11 +1,7 @@
-import models from '../models'
+import { artistaGetAll } from '../controllers/artista.controller'
 
 export const artistaRoute = app => {
-  const Artista = models.artista
 
   app.route('/artistas/')
-    .get((req, res) => {
-      Artista.findAll()
-        .then(rows => res.json(rows))
-    })
+    .get(artistaGetAll)
 }
