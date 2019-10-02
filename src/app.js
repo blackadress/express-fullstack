@@ -3,6 +3,8 @@ import express from 'express'
 
 import path from 'path'
 
+import { routes } from './routes'
+
 const setup = () => {
   let app = express()
   app.use(bodyParser.json())
@@ -13,6 +15,8 @@ const setup = () => {
   
   app.use('/static', express.static(path.join(__dirname, 'static')))
   app.use(express.static(path.join(__dirname, 'public')))
+
+  routes.map(route => route(app))
 
   return app
 }
