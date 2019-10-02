@@ -2,7 +2,6 @@ import { setup } from './app'
 import { routes } from './routes'
 
 let app = setup()
-setup(app)
 
 routes.map(route => route(app))
 
