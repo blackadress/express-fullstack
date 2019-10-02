@@ -14,7 +14,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "core-js": "^3.2.1",
-    "express": "^4.17.1",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
