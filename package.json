@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon --exec babel-node src/index.js",
     "build": "./node_modules/.bin/babel src --out-dir dist",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "conn-test": "node --exec babel-node src/models/index.js"
   },
   "keywords": [],
   "author": "",

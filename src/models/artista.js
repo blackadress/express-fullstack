@@ -3,12 +3,8 @@ export default (sequelize, Sequelize) => {
     nombre: {
       type: Sequelize.STRING
     },
-    edad: {
-      type: Sequelize.STRING
-    },
-    // foto apunta a una direccion que contiene la foto del artista
-    foto: {
-      type: Sequelize.STRING
+    fechaNacimiento: {
+      type: Sequelize.DATE
     }
   })
 

@@ -3,9 +3,8 @@ export default (sequelize, Sequelize) => {
     nombre: {
       type: Sequelize.STRING
     },
-    // lyrics van a apuntar hacia un archivo de texto
     lyrics: {
-      type: Sequelize.STRING
+      type: Sequelize.TEXT
     }
   })
 
